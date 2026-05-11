@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Diário de Bordo — Sistema Operacional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Y_SMOBiv2Fk2Dg07d1lSfamicdwqqG9seQF3tQ1332KFaUFNhgmkShmFi6QWknSpxsFHkQ8PUjsM-Y5ldZN_PVTQC_xULunX84530Kqxz9ADiBeXS3rqeO1sl7qMMAxetQLMO-rL4O6ZAs7oZl2Bv_8J4t1u6uf9vsbe3UXX2-bqIampv1jUNHLax5RvrbwC1mUI1kQHepXHJ5W7mUDncgHKE6qaWUfpPzncfObw_i-Izo3QFMFgqvBQ83qdFp5gUZlbFVEK3cIrul1Gomd7_4xwFsDL0jGCenSteKLFKx2oOeVj-2XYtXeJfvEC3gtZtzumEx0dP7BnqUwtnxfzgkKlvEJXahWJzIqgM6U3BVDZUioq45EyWTjbhUdzu3rMxcaWs6J4Ig-sA2Li5mF0PMN305S44Jg2X_YYEntFOTXGIZ_xYfQjVPBY4SwV14oePGGHcN0RJHTcYIjyl8E8YEirdftZ0U7I7XmcDTCzTRdXO7llugFVNPaHofbClVu13gE7yd9rcFbn42gomhSJnbjdRx8c1fcRwHUNNgUwM12MwETahXrdAsKMux3Uru5iPOtOwTXzXt22d9xqrc-2SpP2JCmNC4Hpdewe6JCNthHm-TWEbVAKgQlhPEdrz1jxYf9Otx6XyJJBxQVnQAr9DrH_icGi4ESTpyKv_XpcQiGzeAsksAVcGYs9KVRgm0ZACDTAfq6UZWWPmoZ9uQP-dj3lt5Zedcs2ZpNi5_WnSyGOOBJOV1fIoHTcYBVzSCrv2r1EDNlNwiJoz5f0N3YCicVe7fL7fDf0gBaw2F8Q5z25tLvPzwvhQD9Cr7UXoFES0kYc4BFBePwL7IucgyuqxmzYDFLVqHiF73kzdezRARpUrdoNtwyvbnv3VNh1mC6Waa9O_69LvIGxGA7Ubq2XRJJmPc7pCImc0wGcuHSmJutQ47Qq4AMQ0fkEJ22675FbfHXds1PcB3kaFVOJhFcyA1GApxjRgDlVF18unB--23sv38dWjOYwLvaN86sjwv4byT1nBKeVCWGjA8XmdXUWi2ZkMnLp7aDz_-z4XsDj2tQuquybG637bkqhzYcoe1MbukoaROTEy9IOUOhqg3sKdbw7M3Ungfgs126-OZaJVWYsWyapomj0DJqX_zYTi8Mn1xUZ35WuMZcggvI3C0wfaT4tvzrAckSnfghvxdtjDPPx0IMzlcDPQVt5FiYdtEj8JcvRBuPu3QbOKPOYnQsVZt0av-ckgM4BvbtIO0GO8N3JvINGVy7VAoZ6KuX8JBuMZ-hVN6fSqTPaRKkW9qLUaYTxACx1ypO4NJAzqT-Y9FasIghXu3K6iJopK19CBimKOH3GkB_DTqmqjFqgR1rCyGvaU_CvUrRwen5DuH_dC8cOEh7Kj36gs7O0j_zEqG48aiTXLEbaGku2tnvl2KxYxoYjcOg3BnPTZDIueDdLGBOA7vqyqBdF2O-bcmnTeZ4SXqE64hmqzhopP35Hs4ZPJCRLwedKzChp-AYpUNP2LfZfmnXleXmkaaAC3xlx4rRWQHkrRG-o0L5F0phS6pfh0Y8DY30RHH9DvqUW8ALCg_cw_NjVjksR9dC3znUpOVpe6mqtEUtnPDPQft6eE3GHn6taHIGx7wChwwIgwb9CqLI-rSeIH6MifAlJTmutmHOYrC9W-u_pYaRlh-Ny7Q3s4lQSSQFzmLV27-xVxJ7Vl7aEsW91WYdR13EfYwCDFBOiVJ2Ukw3kUydtPtZl7UieykKP4OVt6vYvItjEFn-l_qR_LlhrDgU9TyNDAJzHqLYEFZAjj2CWIePHvUP3g4gqJG8JvKGS-0bokeby86vZ_f5ZRF7w0e0BqSIZ80ECG8X5GrIcbQwWEQJADx8Am1nuF98n2D18hGs6-5-UMlq-vBSFT_-3OdoNlnAYVLhgZMaS-6UsOsACTJBbvitIVmIKxIMjMuBWc_ILVcUMHiWjlNWpxlZCN118-KVNYboGzEo11DEnzJZa6fWjzFCofzfphPYT6vcBpo2p3XaUe_sdcUShzfwF-VAguV0i2Bjzv0ZVvVAU5bqv5Vjd7dHiofAY9hKAZWui2i9fZDc9hoUtCDu_0XZOplB_NNWv1tcn5bOuz7MEQZF3srVUdkPYkGfd_YhKZKMKW1MXSJnwHZYzQJLQmwhb8WWBsONwA55GwS9YlI5AKwboFm850JARCQv4TnflI9LwcbOVajn8FBPrDFlMP2fkLIpS8PjgMxFT8OnbbhhXVVoP47O_EZQT3qihgQ" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=mkvEBTWxviswY4vh6Zy9i_3MS30DoJRRQK3EyXIsd5rCjnAGmWRkmY2Azipuyx2YW-AETFYe2iAmEfs0CQMHWdfBoprxPcWiFYEty2gO6ohANs8uhmoxM302N2sH5rAEk6OY8oAmEUHfOmIuAZXG-alvcdQvPeWnlthFTnc-vegFb5G4gW2rnRnN4-9Bm2lwgzYbIa_68lIoJaFMLEtZEopDZXDq2wBgBWvF7aUTJODNlf2MMqMKDGivScZppMl_d_fF6asL9ftzKg0xt5U9LfuhG2b1T6Fu82Eq0xyCePgfn2LkGyjjSRMT1-pAPR24R5oMb-YQ2q4js4SpzxmGAT8BMApx2lwNaTRntJNBTOfD92G5CFHG022WyIMydq8_vhaVonP958Ed1BRU56L58_u-guMLHc3hl8-84gPs9-7OD-iqc5qXXaTZ757CMf_QNw7C5SyOsT6jc83SF-nDrmE2wt4gbLY5ayGvWHtXoqODfn0eCQY8v1xvCq97SYFesHH_lXch2EfrkaEgA1iXQQrIYQ-kmVDz8N2Xh2BMLms2p5bBBnV-zsfoXhPP7wbten2mApMaMPFewvvqOPe3Y0Vmdmd6YcM3g3O1kMGfKpGCX63SRZ40eMZWdnUgFL5icU90Cm7iIdAKItCiSb3nDJMvI--84OPH5nwZRlhuy28hBzI0LfRMpQbdLrXAJe4mzMza_Or9jkzTumF1JwxReDFI3sMU0ecFrpAAdCB8w3LFIgwzYE0wBfCzCxc_ev6Umf9qSIpAs6iNHFOq9TiW8k_nKu2kTPfkS4J3HaxNkca5dKl5jKp27uK8UO7soJqHTbwHEfZis88HfZeJGFdRgeclWHGsexFlzk21reGNOE7JNX8OKiXZZ3qPtc71mHVkSYQWRids1ARKW7_1MhGbwXvaCJD6NiydpQDkHhmFWN5l-sVYjtQSgLMNbNy4_BwA8pqV33xPu_hgg4br-kU9b8pr9UO0_6tq3twhxnmxhF1w_wrzMHX48-kZsB_SFrjJR1-bA_1kWDsdbSUHCLx8KJyJERFfvh_GTQc6ES_CQJeBq3kkU6uK9UIRoplT5SM4j3WlpLwbTbu4skg2w2WFp3FUHh3iLJu2EIgDEXR0FImiRbPpQ_AgJGVVq2C5_3MvXaf5i-rErvMyfETrgPS7vrKvRvokoJpcJn-Jsg0qCNcfu9iva1oU0LSARHSBb1zlLR3jyFmuVcg78bwYlJ2dC4ku4m5O1Th8THPM1Icmmbg2KdRj6Mqq97UF3mSYzAYMeVe4AwH97_HdMlFHQ0nezacAI9frgb63kA9e40rk8ucm7VJxPlF0DZrvevxjZDz0UcKBdxpR3i5W3o38rtkr-ew9AWvoh8XgKt8XR458_h7dDhasbUeCVJUwZhdFSv4qQdz7j99yTKZNuWnkoKH7DMuk9wNBaRAzx9dqZ8yWa-QxTQ6cTJuY7Zp7nE3HL9rbU-y5WPkR4qvSqC2rcBYUyTafCGy-vXe2CZ_q6eNF8Q0Bt0qjDL5w8_Z9WE5i9MmJpbObQtAfzXD8_HCPJRUpusYe4ibTvEOwyq9Em38-NT5eGejCSHj5utqQ6rj0mw3onhGRnThbeMCI0BxfpJPc6YNHKsHrm8F4n_tTXrwi5o6v5IhZz6X9kcdbQ1qBxAc7ZH5DGmxEY8SUXTqVSzoZ5lajiYRGSultrqVNw-ryGbewtDA5mGjwHLbh23Ln69wdB5JasYhth5K1iUNa-i-EyUjSIoc8ACHn0uEqXSrlYBBQ7By31t--iZ1U2Z-EQCeD8Dy4hm3pVG6CkEPOJ7TKu77aJB0MC3oWt4Os0wFyu9_xdB3Dd0Vp3H_J18-cbWHvsYvF2lhcBn2L4klnCqAhQkI1EdgomXsUsgJyXyW_omPtCgegVPAbEKCOCKFH3SSRyNzCRgeuSPCwAJgaYjx_iTRQYw6p5EfV0V-3Leorw1SEsm0zBlvY36H3gfxJoxGommQXpGS1OEGEuC0nXctgcpOrjYrNjz7MJwoVWJn2YaATKr6DOLnv78Aoe68-eSrfFLkE22CjcttaWHOBhpVeL-7Hs2Kp5mtrq_G1FdWOv-1ci8jI65mw9EL_66k6Fpjp-WS9FH9YaotQ_xPoxqXJiIyEU4Ohv_MXOH-WduyMK2KMQSGZhN76NcqIK6IvuozwPOOaEFsN0mtU4404rTQ9bmnjpgyoR8_I831Pjc9BWS0p1IAm8QHsZ7Bk6T1DFMAZYjLLXuXLTnVcbzGrnYtybzG6FgcjnLGYj8JQ-WtvbNS1Kuo0YDc79MxhYmhHh3j0" charset="UTF-8"></script><style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f0f2f5;--surface:#ffffff;--surface2:#f6f8fa;--surface3:#eaeef2;
+  --border:#d0d7de;--border2:#b0b7c3;
+  --text:#1a1e24;--text2:#57606a;--text3:#8c959f;
+  --primary:#0969da;--primary-dim:#dbeafe;
+  --danger:#cf222e;--danger-dim:#ffdce0;
+  --warn:#9a6700;--ok:#1a7f37;--ok-dim:#dafbe1;
+  --radius:10px;--radius-lg:14px;--radius-xl:20px;
+  --shadow:0 8px 32px rgba(0,0,0,0.12);
+  --font:'DM Sans',system-ui,sans-serif;--mono:'DM Mono',monospace;
+}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px;line-height:1.6}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+
+.screen{display:none;min-height:100vh;flex-direction:column}
+.screen.active{display:flex}
+
+/* LOGIN */
+#screen-login{align-items:center;justify-content:center;padding:24px;
+  background:radial-gradient(ellipse at 30% 20%,#dbeafe 0%,#f0f2f5 65%)}
+.login-wrap{width:100%;max-width:780px}
+.login-brand{text-align:center;margin-bottom:40px}
+.brand-icon{width:56px;height:56px;background:var(--primary);border-radius:14px;display:inline-flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px}
+.login-brand h1{font-size:1.5rem;font-weight:700;letter-spacing:-.5px}
+.login-brand p{color:var(--text2);font-size:.85rem;margin-top:6px}
+.users-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;margin-bottom:20px}
+.user-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 16px;text-align:center;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
+.user-card:hover:not(.inactive){border-color:var(--primary);transform:translateY(-3px);box-shadow:0 8px 24px rgba(88,166,255,.15)}
+.user-card.inactive{opacity:.45;cursor:not-allowed}
+.avatar{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;margin:0 auto 12px}
+.avatar.adm{background:#0969da;color:#fff}.avatar.ger{background:#6e40c9;color:#fff}
+.avatar.ope{background:#1a7f37;color:#fff}.avatar.vis{background:#9a6700;color:#fff}
+.u-name{font-size:.88rem;font-weight:600;margin-bottom:4px}
+.u-profile{font-size:.75rem;color:var(--text2)}
+.u-status{display:inline-block;margin-top:10px;font-size:.7rem;font-weight:600;padding:2px 8px;border-radius:20px}
+.u-status.ativo{background:#dafbe1;color:#1a7f37}.u-status.inativo{background:#ffdce0;color:#cf222e}
+
+/* OVERLAY / MODAL */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:1000;backdrop-filter:blur(4px)}
+.overlay.open{display:flex}
+.modal{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-xl);padding:36px;width:100%;max-width:380px;animation:min .2s ease}
+@keyframes min{from{transform:scale(.93);opacity:0}to{transform:scale(1);opacity:1}}
+.modal-header{text-align:center;margin-bottom:28px}
+.m-avatar{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:700;background:var(--primary);color:#fff}
+.modal h2{font-size:1.1rem;font-weight:700}
+.modal-sub{color:var(--text2);font-size:.82rem;margin-top:4px}
+.pin-input{width:100%;padding:12px 14px;background:var(--surface3);border:1px solid var(--border2);border-radius:var(--radius);color:var(--text);font-size:1.1rem;font-family:var(--mono);letter-spacing:4px;text-align:center;margin-bottom:12px}
+.pin-input:focus{outline:none;border-color:var(--primary)}
+.pin-error{color:var(--danger);font-size:.82rem;text-align:center;margin-bottom:12px;display:none}
+.modal-actions{display:flex;gap:10px}
+
+/* TOPBAR */
+.topbar{height:64px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;gap:12px;flex-shrink:0;position:sticky;top:0;z-index:100}
+.topbar-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.92rem;white-space:nowrap}
+.topbar-nav{display:flex;align-items:center;gap:2px;margin-left:16px;flex:1;overflow-x:auto}
+.topbar-nav::-webkit-scrollbar{height:0}
+.nav-btn{display:flex;align-items:center;gap:8px;padding:10px 20px;border:none;background:transparent;color:var(--text2);font-size:.95rem;font-family:var(--font);cursor:pointer;border-radius:var(--radius);transition:all .15s;white-space:nowrap;font-weight:500}
+.nav-btn:hover{background:var(--surface2);color:var(--text)}
+.nav-btn.active{background:var(--surface3);color:var(--primary)}
+.topbar-right{display:flex;align-items:center;gap:12px;margin-left:auto;flex-shrink:0}
+.s-name{font-size:.82rem;font-weight:600;text-align:right}
+.s-role{font-size:.72rem;color:var(--text2);text-align:right}
+.btn-logout{padding:6px 12px;border:1px solid var(--border2);background:transparent;color:var(--text2);border-radius:var(--radius);font-size:.78rem;cursor:pointer;font-family:var(--font);transition:all .15s}
+.btn-logout:hover{border-color:var(--danger);color:var(--danger)}
+
+/* MAIN */
+.main-content{flex:1;overflow-y:auto}
+.page{display:none;padding:24px;max-width:1100px;margin:0 auto}
+.page.active{display:block}
+.page-header{margin-bottom:24px;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.page-title{font-size:1.2rem;font-weight:700}
+.page-sub{font-size:.81rem;color:var(--text2);margin-top:2px}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:var(--radius);font-size:.82rem;font-family:var(--font);font-weight:500;cursor:pointer;border:1px solid transparent;transition:all .15s;text-decoration:none}
+.btn-primary{background:var(--primary);color:#fff;border-color:var(--primary)}.btn-primary:hover{background:#0550ae}
+.btn-secondary{background:var(--surface3);color:var(--text);border-color:var(--border2)}.btn-secondary:hover{border-color:var(--border)}
+.btn-danger{background:transparent;color:var(--danger);border-color:var(--danger-dim)}.btn-danger:hover{background:#ffdce0}
+.btn-ok{background:var(--ok-dim);color:#fff;border-color:var(--ok-dim)}.btn-ok:hover{background:#2ea043}
+.btn-sm{padding:5px 10px;font-size:.76rem}
+
+/* STATS */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;border-left:3px solid var(--border)}
+.stat-card.c-red{border-left-color:var(--danger)}.stat-card.c-ok{border-left-color:var(--ok)}.stat-card.c-warn{border-left-color:var(--warn)}
+.stat-label{font-size:.72rem;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.stat-value{font-size:1.9rem;font-weight:700;line-height:1}
+.stat-sub{font-size:.72rem;color:var(--text3);margin-top:5px}
+
+/* CHART */
+.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.chart-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px}
+.chart-title{font-size:.81rem;font-weight:600;margin-bottom:14px;color:var(--text)}
+.bar-chart{display:flex;flex-direction:column;gap:9px}
+.bar-row{display:flex;align-items:center;gap:10px;font-size:.76rem}
+.bar-label{width:70px;color:var(--text2);text-align:right;flex-shrink:0}
+.bar-track{flex:1;height:7px;background:var(--surface3);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;transition:width .6s ease}
+.bar-count{width:22px;color:var(--text3);font-family:var(--mono);font-size:.73rem}
+
+/* RECENT */
+.recent-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px;margin-bottom:20px}
+
+/* TABLES */
+.form-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th{font-size:.71rem;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;padding:9px 12px;border-bottom:1px solid var(--border);text-align:left;white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--border);font-size:.83rem;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:var(--surface2)}
+
+/* BADGES */
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:20px;font-size:.69rem;font-weight:600;letter-spacing:.2px;white-space:nowrap}
+.badge-critica{background:#ffdce0;color:#cf222e}.badge-alta{background:#fff8c5;color:#9a6700}
+.badge-media{background:#fffacc;color:#7a6400}.badge-baixa{background:#dafbe1;color:#1a7f37}
+.badge-aberto{background:#dbeafe;color:#0969da}.badge-andamento{background:#fff8c5;color:#9a6700}
+.badge-resolvido{background:#dafbe1;color:#1a7f37}
+.badge-adm{background:#dbeafe;color:#0969da}.badge-ger{background:#eddeff;color:#8250df}
+.badge-ope{background:#dafbe1;color:#1a7f37}.badge-vis{background:#fff8c5;color:#9a6700}
+.badge-ativo{background:#dafbe1;color:#1a7f37}.badge-inativo{background:#ffdce0;color:#cf222e}
+
+/* EVENT CARDS */
+.event-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px;margin-bottom:10px;border-left:3px solid var(--border);transition:border-left-color .15s}
+.event-card.critica{border-left-color:var(--danger)}.event-card.alta{border-left-color:var(--warn)}
+.event-card.media{border-left-color:#7a6400}.event-card.baixa{border-left-color:var(--ok)}
+.ec-header{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:7px}
+.ec-title{font-weight:600;font-size:.9rem;flex:1}
+.ec-badges{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0}
+.ec-meta{font-size:.75rem;color:var(--text2);display:flex;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.ec-desc{font-size:.79rem;color:var(--text2);line-height:1.5;margin-top:5px}
+.ec-actions{display:flex;gap:7px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}
+
+/* FORMS */
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:.74rem;font-weight:600;color:var(--text2);margin-bottom:6px;text-transform:uppercase;letter-spacing:.4px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:8px 11px;background:var(--surface3);border:1px solid var(--border2);border-radius:var(--radius);color:var(--text);font-size:.86rem;font-family:var(--font);transition:border-color .15s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--primary)}
+.form-group textarea{resize:vertical;min-height:80px}
+select option{background:var(--surface2)}
+
+/* FILTER */
+.filter-bar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px}
+.filter-bar input,.filter-bar select{flex:1;min-width:160px;padding:11px 14px;background:var(--surface3);border:1px solid var(--border2);border-radius:var(--radius);color:var(--text);font-size:.95rem;font-family:var(--font)}
+.filter-bar input:focus,.filter-bar select:focus{outline:none;border-color:var(--primary)}
+
+/* EMPTY */
+.empty-state{text-align:center;padding:56px 24px;color:var(--text3)}
+.empty-state .e-icon{font-size:2.5rem;margin-bottom:10px;display:block;opacity:.4}
+.empty-state p{font-size:.86rem}
+
+/* TABS */
+.tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:18px}
+.tab-btn{padding:8px 16px;border:none;background:transparent;color:var(--text2);font-size:.82rem;font-family:var(--font);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s}
+.tab-btn.active{color:var(--primary);border-bottom-color:var(--primary)}
+.tab-btn:hover:not(.active){color:var(--text)}
+.tab-content{display:none}.tab-content.active{display:block}
+
+/* PERM TABLE */
+.perm-table{width:100%;border-collapse:collapse;margin-top:18px}
+.perm-table th{font-size:.71rem;color:var(--text2);padding:8px 10px;border-bottom:1px solid var(--border);text-align:center;text-transform:uppercase;letter-spacing:.4px}
+.perm-table th:first-child{text-align:left}
+.perm-table td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center;font-size:.82rem}
+.perm-table td:first-child{text-align:left;font-weight:500}
+.perm-table tr:hover td{background:var(--surface2)}
+.perm-check{cursor:pointer;width:15px;height:15px;accent-color:var(--primary)}
+
+/* ACCESS LOG */
+.access-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--border);font-size:.81rem}
+.access-row:last-child{border-bottom:none}
+.access-time{color:var(--text2);font-family:var(--mono);font-size:.74rem;flex-shrink:0;width:125px}
+.access-user{font-weight:500;flex:1}
+.access-obs{color:var(--text3);flex:1;font-size:.76rem}
+
+/* COUNT PILL */
+.count-pill{display:inline-flex;align-items:center;justify-content:center;min-width:19px;height:19px;padding:0 6px;background:var(--surface3);color:var(--text2);font-size:.68rem;font-weight:600;border-radius:20px;margin-left:6px}
+
+/* TOAST */
+.toast{position:fixed;bottom:20px;right:20px;z-index:9999;padding:11px 18px;border-radius:var(--radius);font-size:.84rem;font-weight:500;display:none;max-width:300px;box-shadow:var(--shadow)}
+.toast.ok{background:#238636;color:#fff}.toast.err{background:#da3633;color:#fff}.toast.info{background:#1f6feb;color:#fff}
+
+@media(max-width:720px){
+  .form-row{grid-template-columns:1fr}
+  .chart-row{grid-template-columns:1fr}
+  .page{padding:14px}
+  .topbar-nav .nav-btn span:not(.n-icon){display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ LOGIN ══ -->
+<div id="screen-login" class="screen active">
+  <div class="login-wrap">
+    <div class="login-brand">
+      <div class="brand-icon">📋</div>
+      <h1>Diário de Bordo</h1>
+      <p>Registro de Falhas Operacionais — Selecione o usuário para entrar</p>
+    </div>
+    <div class="users-grid" id="users-grid"></div>
+    <p style="text-align:center;font-size:.74rem;color:var(--text3)">Apenas usuários ativos podem acessar o sistema</p>
+  </div>
+</div>
+
+<!-- ══ APP ══ -->
+<div id="screen-app" class="screen">
+  <div class="topbar">
+    <div class="topbar-brand"><span style="font-size:18px">📋</span> Diário de Bordo</div>
+    <nav class="topbar-nav" id="topbar-nav"></nav>
+    <div class="topbar-right">
+      <div><div class="s-name" id="s-name">—</div><div class="s-role" id="s-role">—</div></div>
+      <button class="btn-logout" onclick="logout()">Sair</button>
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <!-- DASHBOARD -->
+    <div class="page active" id="page-dashboard">
+      <div class="page-header"><div><div class="page-title">Dashboard</div><div class="page-sub">Visão geral das falhas operacionais</div></div></div>
+      <div class="stats-grid" id="dash-stats"></div>
+      <div class="chart-row">
+        <div class="chart-box"><div class="chart-title">Por Severidade</div><div class="bar-chart" id="bar-sev"></div></div>
+        <div class="chart-box"><div class="chart-title">Por Status</div><div class="bar-chart" id="bar-sta"></div></div>
+      </div>
+      <div class="recent-box"><div class="chart-title">Eventos Recentes</div><div id="dash-recent"></div></div>
+    </div>
+
+    <!-- CADASTRO -->
+    <div class="page" id="page-cadastro">
+      <div class="page-header"><div><div class="page-title">Cadastrar Evento</div><div class="page-sub">Registre uma nova falha operacional</div></div></div>
+      <div class="form-card">
+        <div class="form-group"><label>Título *</label><input type="text" id="f-titulo" placeholder="Ex: Queda de servidor principal"/></div>
+        <div class="form-row">
+          <div class="form-group"><label>Data de Início *</label><input type="datetime-local" id="f-data"/></div>
+          <div class="form-group"><label>Data de Fim *</label><input type="datetime-local" id="f-data-fim"/></div>
+        </div>
+        <div class="form-group"><label>Sistema / Produto *</label><input type="text" id="f-sistema" placeholder="Ex: Banco de dados, API, Rede..."/></div>
+        <div class="form-row">
+          <div class="form-group"><label>Tipo de Chamado *</label><select id="f-tipo-chamado"><option value="">Selecione...</option><option value="ticket_noc">Ticket NOC</option><option value="ti">T.I</option></select></div>
+          <div class="form-group"><label>Número do Chamado *</label><input type="text" id="f-num-chamado" placeholder="Apenas números" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'')"/></div>
+        </div>
+        <div class="form-group"><label>Responsável</label><input type="text" id="f-resp" readonly style="background:var(--surface2);cursor:not-allowed;opacity:.8" placeholder="Usuário logado"/></div>
+        <div class="form-group"><label>Descrição *</label><textarea id="f-desc" placeholder="Descreva o impacto, sintomas e contexto da falha..."></textarea></div>
+        <div class="form-group"><label>Observação <span style="font-weight:400;color:var(--text3)">(opcional)</span></label><textarea id="f-obs" placeholder="Informações adicionais, links, anexos..."></textarea></div>
+        <div style="display:flex;gap:9px;flex-wrap:wrap">
+          <button class="btn btn-primary" onclick="salvarEvento()">💾 Salvar Evento</button>
+          <button class="btn btn-secondary" onclick="limparForm()">Limpar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONSULTA -->
+    <div class="page" id="page-consulta">
+      <div class="page-header">
+        <div><div class="page-title">Histórico de Eventos<span class="count-pill" id="cnt-ev">0</span></div><div class="page-sub">Visualize e filtre todos os eventos registrados</div></div>
+        <button class="btn btn-secondary btn-sm" onclick="exportCSV()">⬇ Exportar CSV</button>
+      </div>
+      <div class="filter-bar">
+        <input type="text" id="fil-txt" placeholder="🔍 Buscar por título ou sistema..." oninput="renderEventos()"/>
+        <select id="fil-sev" onchange="renderEventos()"><option value="">Todas as severidades</option><option value="critica">🔴 Crítica</option><option value="alta">🟠 Alta</option><option value="media">🟡 Média</option><option value="baixa">🟢 Baixa</option></select>
+        <select id="fil-sta" onchange="renderEventos()"><option value="">Todos os status</option><option value="aberto">Aberto</option><option value="andamento">Em andamento</option><option value="resolvido">Resolvido</option></select>
+      </div>
+      <div id="ev-list"></div>
+    </div>
+
+    <!-- USUARIOS -->
+    <div class="page" id="page-usuarios">
+      <div class="page-header">
+        <div><div class="page-title">Usuários<span class="count-pill" id="cnt-usr">0</span></div><div class="page-sub">Gerencie usuários e acessos</div></div>
+        <button class="btn btn-primary btn-sm" id="btn-novo-usr" onclick="abrirModalUsr()">+ Novo Usuário</button>
+      </div>
+      <div class="form-card"><div class="table-wrap"><table><thead><tr><th>Usuário</th><th>Código</th><th>Perfil</th><th>Status</th><th>Último Acesso</th><th>Ações</th></tr></thead><tbody id="tbody-usr"></tbody></table></div></div>
+    </div>
+
+    <!-- PERFIS -->
+    <div class="page" id="page-perfis">
+      <div class="page-header"><div><div class="page-title">Perfis e Permissões</div><div class="page-sub">Configure os perfis de acesso por módulo</div></div></div>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="swTab('perfis','tab-pf-lista',this)">Perfis</button>
+        <button class="tab-btn" onclick="swTab('perfis','tab-pf-perm',this)">Permissões</button>
+      </div>
+      <div class="tab-content active" id="tab-pf-lista">
+        <div class="form-card"><div class="table-wrap"><table><thead><tr><th>Perfil</th><th>Descrição</th><th>Nível</th><th>Status</th></tr></thead><tbody id="tbody-perf"></tbody></table></div></div>
+      </div>
+      <div class="tab-content" id="tab-pf-perm">
+        <div class="form-card">
+          <div class="form-group" style="max-width:260px;margin-bottom:0"><label>Perfil</label><select id="sel-perm-perf" onchange="renderPermTable()"><option value="">Selecione...</option></select></div>
+          <div id="perm-table-wrap"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACESSO -->
+    <div class="page" id="page-acesso">
+      <div class="page-header"><div><div class="page-title">Configurações de Acesso</div><div class="page-sub">Histórico e gerenciamento de acessos</div></div></div>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="swTab('ac','tab-ac-hist',this)">Histórico</button>
+        <button class="tab-btn" onclick="swTab('ac','tab-ac-cfg',this)">Redefinir Código</button>
+      </div>
+      <div class="tab-content active" id="tab-ac-hist">
+        <div class="form-card"><div id="ac-hist"></div></div>
+      </div>
+      <div class="tab-content" id="tab-ac-cfg">
+        <div class="form-card">
+          <h3 style="font-size:.9rem;font-weight:600;margin-bottom:16px">Redefinir Código Fixo de Usuário</h3>
+          <div class="form-row" style="max-width:460px">
+            <div class="form-group"><label>Usuário</label><select id="cfg-usr-sel"><option value="">Selecione...</option></select></div>
+            <div class="form-group"><label>Novo Código</label><input type="text" id="cfg-novo-cod" placeholder="Novo código fixo"/></div>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="redefinirCod()">Redefinir Código</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODAL PIN -->
+<div class="overlay" id="ov-pin">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="m-avatar" id="pin-av">?</div>
+      <h2 id="pin-nome">Usuário</h2>
+      <div class="modal-sub" id="pin-perf">Perfil</div>
+    </div>
+    <input class="pin-input" type="password" id="pin-inp" placeholder="••••••••" maxlength="20" onkeydown="if(event.key==='Enter')confirmarPin()"/>
+    <div class="pin-error" id="pin-err">Código inválido. Tente novamente.</div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" style="flex:1" onclick="fecharPin()">Cancelar</button>
+      <button class="btn btn-primary" style="flex:1" onclick="confirmarPin()">Entrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL USUARIO -->
+<div class="overlay" id="ov-usr">
+  <div class="modal" style="max-width:420px">
+    <h2 style="margin-bottom:20px;font-size:1rem" id="mu-title">Novo Usuário</h2>
+    <div class="form-group"><label>Nome *</label><input type="text" id="mu-nome" placeholder="Nome completo"/></div>
+    <div class="form-group"><label>Código Fixo *</label><input type="text" id="mu-cod" placeholder="Código de acesso"/></div>
+    <div class="form-group"><label>Perfil</label><select id="mu-perf"><option value="adm">Administrador</option><option value="ger">Supervisor</option><option value="ope">Operador</option><option value="vis">Visualizador</option></select></div>
+    <div class="form-group"><label>Status</label><select id="mu-sta"><option value="ativo">Ativo</option><option value="inativo">Inativo</option></select></div>
+    <input type="hidden" id="mu-id"/>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" style="flex:1" onclick="fecharModalUsr()">Cancelar</button>
+      <button class="btn btn-primary" style="flex:1" onclick="salvarUsuario()">Salvar</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ══ DB ══
+const DB={
+  g(k){try{return JSON.parse(localStorage.getItem('dob_'+k)||'null')}catch{return null}},
+  s(k,v){localStorage.setItem('dob_'+k,JSON.stringify(v))}
+};
+
+function initDB(){
+  if(DB.g('init_v2'))return;
+  DB.s('usuarios',[{id:1,nome:'Mateus Nascimento',codigo:'0290',perfil:'adm',status:'ativo',criado:now(),ultimoAcesso:null}]);
+  DB.s('perfis',[
+    {id:'adm',nome:'Administrador',desc:'Acesso total ao sistema',nivel:1,ativo:true},
+    {id:'ger',nome:'Supervisor',desc:'Acesso parcial ao sistema',nivel:2,ativo:true},
+    {id:'ope',nome:'Operador',desc:'Acesso operacional',nivel:3,ativo:true},
+    {id:'vis',nome:'Visualizador',desc:'Somente consulta',nivel:4,ativo:true},
+  ]);
+  const mods=['dashboard','cadastro','consulta','usuarios','perfis','acesso'];
+  const perms=[];
+  mods.forEach(m=>{
+    perms.push({perfil:'adm',modulo:m,ver:true,cad:true,edi:true,exc:true,cfg:true});
+    const g={dashboard:{ver:true,cad:false,edi:false,exc:false,cfg:false},cadastro:{ver:true,cad:true,edi:true,exc:false,cfg:false},consulta:{ver:true,cad:false,edi:false,exc:false,cfg:false},usuarios:{ver:false,cad:false,edi:false,exc:false,cfg:false},perfis:{ver:false,cad:false,edi:false,exc:false,cfg:false},acesso:{ver:false,cad:false,edi:false,exc:false,cfg:false}};
+    perms.push({perfil:'ger',modulo:m,...(g[m]||{ver:false,cad:false,edi:false,exc:false,cfg:false})});
+    const o={dashboard:{ver:true,cad:false,edi:false,exc:false,cfg:false},cadastro:{ver:true,cad:true,edi:false,exc:false,cfg:false},consulta:{ver:true,cad:false,edi:false,exc:false,cfg:false},usuarios:{ver:false,cad:false,edi:false,exc:false,cfg:false},perfis:{ver:false,cad:false,edi:false,exc:false,cfg:false},acesso:{ver:false,cad:false,edi:false,exc:false,cfg:false}};
+    perms.push({perfil:'ope',modulo:m,...(o[m]||{ver:false,cad:false,edi:false,exc:false,cfg:false})});
+    const v={dashboard:{ver:true,cad:false,edi:false,exc:false,cfg:false},cadastro:{ver:false,cad:false,edi:false,exc:false,cfg:false},consulta:{ver:true,cad:false,edi:false,exc:false,cfg:false},usuarios:{ver:false,cad:false,edi:false,exc:false,cfg:false},perfis:{ver:false,cad:false,edi:false,exc:false,cfg:false},acesso:{ver:false,cad:false,edi:false,exc:false,cfg:false}};
+    perms.push({perfil:'vis',modulo:m,...(v[m]||{ver:false,cad:false,edi:false,exc:false,cfg:false})});
+  });
+  DB.s('permissoes',perms);
+  DB.s('eventos',[]);
+  DB.s('acessos',[]);
+  DB.s('init_v2',true);
+}
+
+function now(){return new Date().toISOString()}
+function getUs(){return DB.g('usuarios')||[]}
+function getPs(){return DB.g('perfis')||[]}
+function getPrs(){return DB.g('permissoes')||[]}
+function getEvs(){return DB.g('eventos')||[]}
+function getAcs(){return DB.g('acessos')||[]}
+
+// ══ SESSION ══
+let SES=null,PIN_TGT=null;
+
+function perm(mod,acao='ver'){
+  if(!SES)return false;
+  const p=getPrs().find(x=>x.perfil===SES.perfil&&x.modulo===mod);
+  return p?!!p[acao]:false;
+}
+
+// ══ LOGIN ══
+function renderLogin(){
+  const grid=document.getElementById('users-grid');
+  grid.innerHTML=getUs().map(u=>{
+    const ini=u.nome.split(' ').slice(0,2).map(n=>n[0]).join('').toUpperCase();
+    const pn=(getPs().find(p=>p.id===u.perfil)||{nome:'—'}).nome;
+    const ia=u.status!=='ativo';
+    return `<div class="user-card${ia?' inactive':''}" onclick="${ia?`toast('Usuário inativo. Acesso bloqueado.','err')`:`selUser(${u.id})`}">
+      <div class="avatar ${u.perfil}">${ini}</div>
+      <div class="u-name">${x(u.nome)}</div>
+      <div class="u-profile">${pn}</div>
+      <span class="u-status ${u.status}">${u.status==='ativo'?'● Ativo':'● Inativo'}</span>
+    </div>`;
+  }).join('');
+}
+
+function selUser(id){
+  const u=getUs().find(u=>u.id===id);if(!u)return;
+  PIN_TGT=u;
+  const ini=u.nome.split(' ').slice(0,2).map(n=>n[0]).join('').toUpperCase();
+  const pn=(getPs().find(p=>p.id===u.perfil)||{nome:'—'}).nome;
+  document.getElementById('pin-av').textContent=ini;
+  document.getElementById('pin-av').className='m-avatar '+u.perfil;
+  document.getElementById('pin-nome').textContent=u.nome;
+  document.getElementById('pin-perf').textContent=pn;
+  document.getElementById('pin-inp').value='';
+  document.getElementById('pin-err').style.display='none';
+  document.getElementById('ov-pin').classList.add('open');
+  setTimeout(()=>document.getElementById('pin-inp').focus(),120);
+}
+
+function fecharPin(){document.getElementById('ov-pin').classList.remove('open');PIN_TGT=null}
+
+function confirmarPin(){
+  if(!PIN_TGT)return;
+  const v=document.getElementById('pin-inp').value;
+  if(v===PIN_TGT.codigo){
+    const us=getUs(),idx=us.findIndex(u=>u.id===PIN_TGT.id),n=now();
+    us[idx].ultimoAcesso=n;DB.s('usuarios',us);
+    logAcesso(PIN_TGT.id,PIN_TGT.nome,'ok','Login realizado');
+    SES={...us[idx]};fecharPin();entrarApp();
+  } else {
+    logAcesso(PIN_TGT.id,PIN_TGT.nome,'falha','Código inválido');
+    document.getElementById('pin-err').style.display='block';
+    document.getElementById('pin-inp').value='';
+    document.getElementById('pin-inp').focus();
+  }
+}
+
+function logAcesso(uid,unome,status,obs){
+  const ac=getAcs();
+  ac.unshift({id:Date.now(),uid,unome,dt:now(),status,obs});
+  if(ac.length>300)ac.splice(300);
+  DB.s('acessos',ac);
+}
+
+// ══ APP ══
+const NAV=[
+  {id:'dashboard',lb:'Dashboard',ic:'📊',acao:'ver'},
+  {id:'cadastro',lb:'Cadastrar',ic:'➕',acao:'cad'},
+  {id:'consulta',lb:'Histórico',ic:'🔍',acao:'ver'},
+  {id:'usuarios',lb:'Usuários',ic:'👥',acao:'ver'},
+  {id:'perfis',lb:'Perfis',ic:'🔐',acao:'ver'},
+  {id:'acesso',lb:'Acesso',ic:'⚙️',acao:'ver'},
+];
+
+function entrarApp(){
+  document.getElementById('screen-login').classList.remove('active');
+  document.getElementById('screen-app').classList.add('active');
+  document.getElementById('s-name').textContent=SES.nome;
+  document.getElementById('s-role').textContent=(getPs().find(p=>p.id===SES.perfil)||{nome:'—'}).nome;
+  buildNav();
+  const first=NAV.find(n=>perm(n.id,'ver'));
+  if(first)navTo(first.id);
+  renderDash();
+}
+
+function buildNav(){
+  const nav=document.getElementById('topbar-nav');
+  nav.innerHTML=NAV.filter(n=>perm(n.id,'ver')).map(n=>
+    `<button class="nav-btn" id="nav-${n.id}" onclick="navTo('${n.id}')">${n.ic} ${n.lb}</button>`
+  ).join('');
+}
+
+function navTo(pg){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  const p=document.getElementById('page-'+pg),n=document.getElementById('nav-'+pg);
+  if(p)p.classList.add('active');if(n)n.classList.add('active');
+  if(pg==='dashboard')renderDash();
+  if(pg==='consulta')renderEventos();
+  if(pg==='cadastro'){
+    const respEl=document.getElementById('f-resp');
+    if(respEl&&SES)respEl.value=SES.nome;
+    const dataEl=document.getElementById('f-data');
+    if(dataEl&&!dataEl.value)dataEl.value=new Date().toISOString().slice(0,16);
+  }
+  if(pg==='usuarios')renderUsuarios();
+  if(pg==='perfis')renderPerfis();
+  if(pg==='acesso')renderAcesso();
+}
+
+function logout(){SES=null;document.getElementById('screen-app').classList.remove('active');document.getElementById('screen-login').classList.add('active');renderLogin()}
+
+// ══ DASHBOARD ══
+const SEV_C={critica:'var(--danger)',alta:'var(--warn)',media:'#7a6400',baixa:'var(--ok)'};
+const SEV_L={critica:'Crítica',alta:'Alta',media:'Média',baixa:'Baixa'};
+const STA_C={aberto:'var(--primary)',andamento:'var(--warn)',resolvido:'var(--ok)'};
+const STA_L={aberto:'Aberto',andamento:'Andamento',resolvido:'Resolvido'};
+
+function renderDash(){
+  const allEvs=getEvs();
+  const evs=SES&&SES.perfil==='ope'?allEvs.filter(e=>e.regPor===SES.nome):allEvs;
+
+  // Dia com mais eventos
+  const dayCount={};
+  evs.forEach(e=>{if(e.data){const d=e.data.slice(0,10);dayCount[d]=(dayCount[d]||0)+1;}});
+  const topDay=Object.entries(dayCount).sort((a,b)=>b[1]-a[1])[0];
+  const topDayLabel=topDay?new Date(topDay[0]+'T12:00:00').toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'}):'—';
+  const topDayCount=topDay?topDay[1]:0;
+
+  // Serviço mais impactado
+  const svcCount={};
+  evs.forEach(e=>{if(e.sistema&&e.sistema.trim()){const s=e.sistema.trim();svcCount[s]=(svcCount[s]||0)+1;}});
+  const topSvc=Object.entries(svcCount).sort((a,b)=>b[1]-a[1])[0];
+  const topSvcLabel=topSvc?topSvc[0]:'—';
+  const topSvcCount=topSvc?topSvc[1]:0;
+
+  document.getElementById('dash-stats').innerHTML=
+    `<div class="stat-card"><div class="stat-label">Dia Mais Crítico</div><div class="stat-value" style="font-size:1.3rem">${topDayLabel}</div><div class="stat-sub">${topDayCount} evento${topDayCount!==1?'s':''} nesse dia</div></div>
+     <div class="stat-card c-red"><div class="stat-label">Serviço Mais Impactado</div><div class="stat-value" style="font-size:1.1rem;word-break:break-word">${topSvcLabel}</div><div class="stat-sub">${topSvcCount} ocorrência${topSvcCount!==1?'s':''}</div></div>
+     <div class="stat-card c-warn"><div class="stat-label">Em Aberto</div><div class="stat-value" style="color:var(--warn)">${evs.filter(e=>e.sta==='aberto').length}</div><div class="stat-sub">Aguardando resolução</div></div>`;
+  const sc={critica:0,alta:0,media:0,baixa:0},stc={aberto:0,andamento:0,resolvido:0};
+  evs.forEach(e=>{if(sc[e.sev]!==undefined)sc[e.sev]++;if(stc[e.sta]!==undefined)stc[e.sta]++});
+  const ms=Math.max(...Object.values(sc),1),mst=Math.max(...Object.values(stc),1);
+  document.getElementById('bar-sev').innerHTML=Object.entries(sc).map(([k,v])=>
+    `<div class="bar-row"><span class="bar-label">${SEV_L[k]}</span><div class="bar-track"><div class="bar-fill" style="width:${v/ms*100}%;background:${SEV_C[k]}"></div></div><span class="bar-count">${v}</span></div>`).join('');
+  document.getElementById('bar-sta').innerHTML=Object.entries(stc).map(([k,v])=>
+    `<div class="bar-row"><span class="bar-label">${STA_L[k]}</span><div class="bar-track"><div class="bar-fill" style="width:${v/mst*100}%;background:${STA_C[k]}"></div></div><span class="bar-count">${v}</span></div>`).join('');
+  const rec=evs.slice(0,5);
+  document.getElementById('dash-recent').innerHTML=rec.length?rec.map(e=>ecHTML(e,false)).join(''):'<div class="empty-state"><span class="e-icon">📭</span><p>Nenhum evento registrado ainda.</p></div>';
+}
+
+// ══ EVENTOS ══
+function salvarEvento(){
+  const titulo=document.getElementById('f-titulo').value.trim();
+  const data=document.getElementById('f-data').value;
+  const dataFim=document.getElementById('f-data-fim').value;
+  const sistema=document.getElementById('f-sistema').value.trim();
+  const desc=document.getElementById('f-desc').value.trim();
+  const tipoChamado=document.getElementById('f-tipo-chamado').value;
+  const numChamado=document.getElementById('f-num-chamado').value.trim();
+  if(!titulo||!data||!dataFim||!sistema||!tipoChamado||!numChamado||!desc){toast('Preencha todos os campos obrigatórios.','err');return;}
+  const evs=getEvs();
+  evs.unshift({id:Date.now(),titulo,data,dataFim,
+    sistema,
+    tipoChamado,numChamado,
+    resp:SES.nome,
+    desc,
+    obs:document.getElementById('f-obs').value.trim(),
+    regPor:SES.nome,criadoEm:now()});
+  DB.s('eventos',evs);
+  limparForm();toast('Evento salvo com sucesso!','ok');
+}
+
+function limparForm(){
+  ['f-titulo','f-sistema','f-desc','f-obs','f-num-chamado'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('f-tipo-chamado').value='';
+  document.getElementById('f-data').value=new Date().toISOString().slice(0,16);
+  document.getElementById('f-data-fim').value='';
+  document.getElementById('f-resp').value=SES?SES.nome:'';
+}
+
+function renderEventos(){
+  const q=(document.getElementById('fil-txt').value||'').toLowerCase();
+  const sv=document.getElementById('fil-sev').value,st=document.getElementById('fil-sta').value;
+  let evs=getEvs();
+  if(sv)evs=evs.filter(e=>e.sev===sv);
+  if(st)evs=evs.filter(e=>e.sta===st);
+  if(q)evs=evs.filter(e=>e.titulo.toLowerCase().includes(q)||(e.sistema||'').toLowerCase().includes(q));
+  document.getElementById('cnt-ev').textContent=evs.length;
+  const c=document.getElementById('ev-list');
+  c.innerHTML=evs.length?evs.map(e=>ecHTML(e,true)):'<div class="empty-state"><span class="e-icon">📭</span><p>Nenhum evento encontrado.</p></div>';
+}
+
+function ecHTML(e,actions){
+  const dt=e.data?new Date(e.data).toLocaleString('pt-BR'):'—';
+  const ce=perm('consulta','edi'),cx=perm('consulta','exc');
+  return `<div class="event-card ${e.sev}">
+    <div class="ec-header">
+      <div class="ec-title">${x(e.titulo)}</div>
+      <div class="ec-badges"><span class="badge badge-${e.sev}">${SEV_L[e.sev]||e.sev}</span><span class="badge badge-${e.sta}">${STA_L[e.sta]||e.sta}</span></div>
+    </div>
+    <div class="ec-meta">
+      <span>🕐 ${dt}</span>${e.sistema?`<span>⚙️ ${x(e.sistema)}</span>`:''} ${e.resp?`<span>👤 ${x(e.resp)}</span>`:''} ${e.regPor?`<span>📝 ${x(e.regPor)}</span>`:''}
+    </div>
+    ${e.desc?`<div class="ec-desc">${x(e.desc)}</div>`:''}
+    ${e.acao?`<div class="ec-desc"><strong>🔧 Ação:</strong> ${x(e.acao)}</div>`:''}
+    ${actions&&(ce||cx)?`<div class="ec-actions">${ce?`<button class="btn btn-secondary btn-sm" onclick="editEvento(${e.id})">✏️ Editar</button>`:''} ${cx?`<button class="btn btn-danger btn-sm" onclick="delEvento(${e.id})">🗑 Excluir</button>`:''}</div>`:''}
+  </div>`;
+}
+
+function editEvento(id){
+  const e=getEvs().find(v=>v.id===id);if(!e)return;
+  navTo('cadastro');
+  document.getElementById('f-titulo').value=e.titulo;
+  document.getElementById('f-data').value=e.data;
+  document.getElementById('f-sev').value=e.sev;
+  document.getElementById('f-sta').value=e.sta||'aberto';
+  document.getElementById('f-sistema').value=e.sistema||'';
+  document.getElementById('f-resp').value=e.resp||'';
+  document.getElementById('f-desc').value=e.desc||'';
+  document.getElementById('f-acao').value=e.acao||'';
+  DB.s('eventos',getEvs().filter(v=>v.id!==id));
+  toast('Editando — salve para confirmar as alterações.','info');
+}
+
+function delEvento(id){
+  if(!confirm('Deseja excluir este evento?'))return;
+  DB.s('eventos',getEvs().filter(e=>e.id!==id));
+  renderEventos();toast('Evento excluído.','ok');
+}
+
+function exportCSV(){
+  const evs=getEvs();if(!evs.length){toast('Nenhum evento para exportar.','err');return;}
+  const cols=['id','titulo','data','sev','sta','sistema','resp','desc','acao','regPor','criadoEm'];
+  const rows=[cols.join(';'),...evs.map(e=>cols.map(c=>`"${(e[c]||'').toString().replace(/"/g,'""')}"`).join(';'))];
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([rows.join('\n')],{type:'text/csv;charset=utf-8'}));
+  a.download='eventos_diario_bordo.csv';a.click();
+}
+
+// ══ USUARIOS ══
+function renderUsuarios(){
+  const us=getUs(),ps=getPs(),isAdm=SES.perfil==='adm';
+  document.getElementById('cnt-usr').textContent=us.length;
+  document.getElementById('btn-novo-usr').style.display=isAdm?'':'none';
+  document.getElementById('tbody-usr').innerHTML=us.map(u=>{
+    const pn=(ps.find(p=>p.id===u.perfil)||{nome:'—'}).nome;
+    const ua=u.ultimoAcesso?new Date(u.ultimoAcesso).toLocaleString('pt-BR'):'Nunca';
+    const cod='•'.repeat(Math.min((u.codigo||'').length,8));
+    return `<tr>
+      <td><strong>${x(u.nome)}</strong></td>
+      <td><span style="font-family:var(--mono);font-size:.76rem;color:var(--text2)">${cod}</span></td>
+      <td><span class="badge badge-${u.perfil}">${pn}</span></td>
+      <td><span class="badge badge-${u.status}">${u.status==='ativo'?'Ativo':'Inativo'}</span></td>
+      <td style="color:var(--text2);font-size:.76rem">${ua}</td>
+      <td>${isAdm?`<div style="display:flex;gap:5px;flex-wrap:wrap">
+        <button class="btn btn-secondary btn-sm" onclick="abrirModalUsr(${u.id})">✏️</button>
+        <button class="btn btn-secondary btn-sm" onclick="toggleUsr(${u.id})">${u.status==='ativo'?'🔒':'🔓'}</button>
+        ${u.id!==SES.id?`<button class="btn btn-danger btn-sm" onclick="delUsr(${u.id})">🗑</button>`:''}
+      </div>`:'—'}</td>
+    </tr>`;
+  }).join('');
+  // repopulate config selects
+  const sel=document.getElementById('cfg-usr-sel');
+  if(sel)sel.innerHTML='<option value="">Selecione...</option>'+us.map(u=>`<option value="${u.id}">${x(u.nome)}</option>`).join('');
+}
+
+function abrirModalUsr(id){
+  document.getElementById('mu-id').value=id||'';
+  document.getElementById('mu-title').textContent=id?'Editar Usuário':'Novo Usuário';
+  if(id){
+    const u=getUs().find(u=>u.id===id);if(!u)return;
+    document.getElementById('mu-nome').value=u.nome;
+    document.getElementById('mu-cod').value=u.codigo;
+    document.getElementById('mu-perf').value=u.perfil;
+    document.getElementById('mu-sta').value=u.status;
+  } else {
+    ['mu-nome','mu-cod'].forEach(i=>document.getElementById(i).value='');
+    document.getElementById('mu-perf').value='ope';
+    document.getElementById('mu-sta').value='ativo';
+  }
+  document.getElementById('ov-usr').classList.add('open');
+}
+
+function fecharModalUsr(){document.getElementById('ov-usr').classList.remove('open')}
+
+function salvarUsuario(){
+  const nome=document.getElementById('mu-nome').value.trim();
+  const cod=document.getElementById('mu-cod').value.trim();
+  const perfil=document.getElementById('mu-perf').value;
+  const status=document.getElementById('mu-sta').value;
+  const id=document.getElementById('mu-id').value;
+  if(!nome||!cod){toast('Preencha nome e código.','err');return;}
+  let us=getUs();
+  if(id){const i=us.findIndex(u=>u.id==id);if(i>-1)us[i]={...us[i],nome,codigo:cod,perfil,status}}
+  else us.push({id:Date.now(),nome,codigo:cod,perfil,status,criado:now(),ultimoAcesso:null});
+  DB.s('usuarios',us);
+  fecharModalUsr();renderUsuarios();renderLogin();toast('Usuário salvo!','ok');
+}
+
+function toggleUsr(id){
+  if(id===SES.id){toast('Você não pode alterar o próprio status.','err');return;}
+  const us=getUs(),i=us.findIndex(u=>u.id===id);if(i<0)return;
+  us[i].status=us[i].status==='ativo'?'inativo':'ativo';
+  DB.s('usuarios',us);renderUsuarios();renderLogin();toast('Status atualizado.','ok');
+}
+
+function delUsr(id){
+  if(id===SES.id){toast('Não é possível excluir o próprio usuário.','err');return;}
+  if(!confirm('Deseja excluir este usuário?'))return;
+  DB.s('usuarios',getUs().filter(u=>u.id!==id));
+  renderUsuarios();renderLogin();toast('Usuário excluído.','ok');
+}
+
+// ══ PERFIS ══
+function renderPerfis(){
+  const ps=getPs();
+  const lv={1:'Total',2:'Parcial',3:'Operacional',4:'Somente leitura'};
+  document.getElementById('tbody-perf').innerHTML=ps.map(p=>`<tr>
+    <td><span class="badge badge-${p.id}">${x(p.nome)}</span></td>
+    <td style="color:var(--text2)">${x(p.desc||'')}</td>
+    <td style="color:var(--text2);font-size:.78rem">${lv[p.nivel]||'—'}</td>
+    <td><span class="badge badge-${p.ativo?'ativo':'inativo'}">${p.ativo?'Ativo':'Inativo'}</span></td>
+  </tr>`).join('');
+  const sel=document.getElementById('sel-perm-perf');
+  sel.innerHTML='<option value="">Selecione...</option>'+ps.map(p=>`<option value="${p.id}">${p.nome}</option>`).join('');
+}
+
+function renderPermTable(){
+  const pid=document.getElementById('sel-perm-perf').value,wrap=document.getElementById('perm-table-wrap');
+  if(!pid){wrap.innerHTML='';return;}
+  const isAdm=SES.perfil==='adm';
+  const prms=getPrs().filter(p=>p.perfil===pid);
+  const ml={dashboard:'Dashboard',cadastro:'Cadastrar Evento',consulta:'Consultar Histórico',usuarios:'Usuários',perfis:'Perfis e Permissões',acesso:'Config. de Acesso'};
+  const acs=[{k:'ver',l:'Visualizar'},{k:'cad',l:'Cadastrar'},{k:'edi',l:'Editar'},{k:'exc',l:'Excluir'},{k:'cfg',l:'Configurar'}];
+  wrap.innerHTML=`<table class="perm-table"><thead><tr><th>Módulo</th>${acs.map(a=>`<th>${a.l}</th>`).join('')}</tr></thead><tbody>
+    ${prms.map(p=>`<tr><td>${ml[p.modulo]||p.modulo}</td>${acs.map(a=>`<td><input type="checkbox" class="perm-check" ${p[a.k]?'checked':''} ${isAdm?'':'disabled'} onchange="togPerm('${pid}','${p.modulo}','${a.k}',this.checked)"/></td>`).join('')}</tr>`).join('')}
+  </tbody></table>`;
+}
+
+function togPerm(perf,mod,ac,val){
+  if(SES.perfil!=='adm')return;
+  const prms=getPrs(),i=prms.findIndex(p=>p.perfil===perf&&p.modulo===mod);
+  if(i>-1)prms[i][ac]=val;
+  DB.s('permissoes',prms);toast('Permissão atualizada.','ok');
+}
+
+// ══ ACESSO ══
+function renderAcesso(){
+  const logs=getAcs().slice(0,60);
+  const c=document.getElementById('ac-hist');
+  c.innerHTML=logs.length?logs.map(l=>`<div class="access-row">
+    <span class="access-time">${new Date(l.dt).toLocaleString('pt-BR')}</span>
+    <span class="access-user">${x(l.unome)}</span>
+    <span><span class="badge badge-${l.status==='ok'?'ativo':'critica'}">${l.status==='ok'?'Sucesso':'Falha'}</span></span>
+    <span class="access-obs">${x(l.obs||'')}</span>
+  </div>`).join(''):'<div class="empty-state"><span class="e-icon">📋</span><p>Nenhum acesso registrado ainda.</p></div>';
+}
+
+function redefinirCod(){
+  if(SES.perfil!=='adm'){toast('Apenas administradores podem redefinir códigos.','err');return;}
+  const id=document.getElementById('cfg-usr-sel').value,novo=document.getElementById('cfg-novo-cod').value.trim();
+  if(!id||!novo){toast('Selecione o usuário e informe o novo código.','err');return;}
+  const us=getUs(),i=us.findIndex(u=>u.id==id);if(i<0)return;
+  us[i].codigo=novo;DB.s('usuarios',us);
+  document.getElementById('cfg-novo-cod').value='';
+  logAcesso(SES.id,SES.nome,'ok',`Código do usuário "${us[i].nome}" redefinido`);
+  toast('Código redefinido com sucesso!','ok');
+}
+
+// ══ TABS ══
+function swTab(scope,aid,btn){
+  const pre='tab-'+scope+'-';
+  document.querySelectorAll('[id^="'+pre+'"]').forEach(e=>e.classList.remove('active'));
+  document.getElementById(aid).classList.add('active');
+  btn.closest('.tabs').querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(aid==='tab-pf-perm')renderPermTable();
+  if(aid==='tab-ac-hist')renderAcesso();
+}
+
+// ══ UTILS ══
+function x(s){if(!s)return'';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function toast(msg,type='ok'){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.className='toast '+type;t.style.display='block';
+  clearTimeout(t._t);t._t=setTimeout(()=>t.style.display='none',3200);
+}
+
+// ══ BOOT ══
+initDB();
+document.getElementById('f-data').value=new Date().toISOString().slice(0,16);
+renderLogin();
+</script>
+</body>
+</html>
